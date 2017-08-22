@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Karsilastir.Views.HamburgerMenu"
+             Title="HamburgerMenu"
+             BackgroundColor="#FFB119">
+    <ContentPage.Content>
+        <StackLayout
+            Padding="20,20,0,20"
+            HorizontalOptions="Center">
+            <TableView Intent="Form">
+                <TableRoot>
+                    <TableSection>
+                        <ImageCell ImageSource="Katalog.png"
+                                   x:Name="Katalog"
+                                   Text="Katalog Ürünleri"
+                                   Tapped="Katalog_Tapped"
+                                   TextColor="#E5FFE9"
+                                   
+                                   ></ImageCell>
+                        <ImageCell                                    
+                                   ImageSource="MeyveSebze.png"
+                                   x:Name="MeyveSebze"
+                                   Text="Meyve/Sebze" 
+                                   Tapped="MeyveSebze_Tapped"
+                                   TextColor="#E5FFE9"
+                                   ></ImageCell>
+
+                        <ImageCell ImageSource="Et.png"
+                                   x:Name="EtSarkuteri"
+                                   Text="Et/Şarküteri" 
+                                   Tapped="EtSarkuteri_Tapped"
+                                   TextColor="#E5FFE9"
+                                   ></ImageCell>
+                        <ImageCell                                    
+                                   ImageSource="Gida.png"
+                                   x:Name="Gida"
+                                   Text="Gıda/Yemek Malzemeleri" 
+                                   Tapped="Gida_Tapped"
+                                   TextColor="#E5FFE9"
+                                   ></ImageCell>
+
+                        <ImageCell ImageSource="Bebek.png"
+                                   x:Name="Bebek"
+                                   Text="Bebek Dünyası" 
+                                   Tapped="Bebek_Tapped"
+                                   TextColor="#E5FFE9"
+                                   ></ImageCell>
+                        <ImageCell                                    
+                                   ImageSource="temizlik.png"
+                                   x:Name="TemizlikDunyasi"
+                                   Text="Temizlik Dünyası" 
+                                   Tapped="TemizlikDunyasi_Tapped"
+                                   TextColor="#E5FFE9"
+                                   ></ImageCell>
+
+                        <ImageCell ImageSource="KisiselBakim.png"
+                                   x:Name="KisiselBakim"
+                                   Text="Kişisel Bakım" 
+                                   Tapped="KisiselBakim_Tapped"
+                                   TextColor="#E5FFE9"
+                                   ></ImageCell>
+                        <ImageCell                                    
+                                   ImageSource="PetShop.png"
+                                   x:Name="PetShop"
+                                   Text="PetShop" 
+                                   Tapped="PetShop_Tapped"
+                                   TextColor="#E5FFE9"
+                                   ></ImageCell>
+
+                        <ImageCell ImageSource="Oyuncak.png"
+                                   
+                                   x:Name="OyuncakEglence"
+                                   Text="Oyuncak/Eğlence" 
+                                   Tapped="OyuncakEglence_Tapped"
+                                   TextColor="#E5FFE9"
+                                   ></ImageCell>
+                        <ImageCell                                    
+                                   ImageSource="Kirtasiye.png"
+                                   x:Name="Kirtasiye"
+                                   Text="Kırtasiye" 
+                                   Tapped="Kirtasiye_Tapped"
+                                   TextColor="#E5FFE9"
+                                   ></ImageCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Karsilastir.GirisSayfa"
+             Title="GirisSayfa"
+             BackgroundColor="#FFBA33">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout
+                 Padding="0,35,0,20">
+                <Image
+                Source="logo2.png"
+                HeightRequest="250"
+                WidthRequest="250"
+                HorizontalOptions="Center"/>
+            </StackLayout>
+            <StackLayout             
+               Padding="50,20,50,20"
+               BackgroundColor="#FFFFFF">
+                <Label Text="Hemen Kullanmaya Başla!"
+                           FontSize="Medium"
+                           FontAttributes="Italic"
+                           HorizontalOptions="Center"/>
+                <Button 
+                    x:Name="KarsilastirButton"
+                    Text="Karşılaştır"
+                    Clicked="KarsilastirButton_Clicked"
+                    TextColor="White"
+                    BackgroundColor="#FFA733"
+                    HeightRequest="60"
+                    WidthRequest="170"
+                    HorizontalOptions="Center"/>
+                <StackLayout
+                    Padding="80,20,20,20">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="37" />
+                        <RowDefinition Height="25"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="37" />
+                        <ColumnDefinition Width="37" />
+                        <ColumnDefinition Width="37" />
+
+                        </Grid.ColumnDefinitions>
+                        <Image Source="FaceLogo.png"  Grid.Row="0" Grid.Column="0" WidthRequest="37" HeightRequest="37" />
+                        <Image Source="TwitterLogo.png"  Grid.Row="0" Grid.Column="1" WidthRequest="37" HeightRequest="37" />
+                        <Image Source="InstaLogo.png" Grid.Row="0" Grid.Column="2" WidthRequest="37" HeightRequest="37" />
+                        <Label Text="@meaydogmus" FontSize="Medium" FontAttributes="Italic" HorizontalOptions="Center" Grid.Row="1" Grid.ColumnSpan="3"/>
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

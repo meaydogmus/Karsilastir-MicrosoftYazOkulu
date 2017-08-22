@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Karsilastir.ProfilDetaylari.SifremiUnuttum"
+             BackgroundColor="#E88F23"
+             Title="Şifre Yenileme">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout
+                 Padding="0,20,0,20">
+                <Image
+                Source="UnuttumIcon.png"
+                HeightRequest="150"
+                WidthRequest="150"
+                VerticalOptions="Center"                
+                HorizontalOptions="Center"/>
+            </StackLayout>
+            <StackLayout              
+               Padding="65,20,65,20"
+               BackgroundColor="#FFF0D8">
+                <Entry
+                   Placeholder="Kullanıcı Adı"
+                   WidthRequest="20"
+                   FontSize="15"
+                   HorizontalTextAlignment="Center"/>
+                <Entry
+                  
+                   WidthRequest="20"
+                   FontSize="15"
+                   HorizontalTextAlignment="Center"
+                   Placeholder="Eski Şifre"
+                   IsPassword="True"/>
+                <Entry
+                   
+                   WidthRequest="20"
+                   FontSize="15"
+                   HorizontalTextAlignment="Center"
+                   Placeholder="E-Posta"/>
+                <Button
+                    x:Name="Guncelle"
+                    Text="Güncelle"
+                    Clicked="Guncelle_Clicked"
+                    HeightRequest="40"
+                    WidthRequest="130"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    TextColor="Beige"                
+                    BackgroundColor="#E88F23"/>
+                <Button
+                    x:Name="Guncel_Iptal"
+                    Text="İptal Et"
+                    Clicked="Guncel_Iptal_Clicked"
+                    TextColor="Black"
+                    BackgroundColor="Transparent"
+                    Opacity="0.8"
+                    HeightRequest="30"
+                    WidthRequest="100"
+                    FontAttributes="Italic"
+                    FontSize="8"
+                    HorizontalOptions="Center"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Karsilastir.ProfilDetaylari.KayitOl"
+             Title="Kayıt Ol"
+             BackgroundColor="#FFE126">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout
+                 Padding="0,20,0,20">
+                <Image
+                Source="KayitOlIcon.png"               
+                    HeightRequest="120"
+                WidthRequest="120"
+                VerticalOptions="Center"                
+                HorizontalOptions="Center"/>
+            </StackLayout>
+            <StackLayout              
+               Padding="65,20,65,20"
+               BackgroundColor="#FFF0D8">
+                <Entry 
+                x:Name="Name"
+                Placeholder="Ad Soyad Giriniz"
+                   WidthRequest="20"
+                   FontSize="15"
+                   HorizontalTextAlignment="Center"/>
+                <Entry 
+                x:Name="NickName"                
+                Placeholder="Kullanıcı Adı Giriniz"
+                   WidthRequest="20"
+                   FontSize="15"
+                   HorizontalTextAlignment="Center" />
+                <Entry 
+                x:Name="Mail"
+                Placeholder="E-Posta Adresiniz"                  
+                WidthRequest="20"
+                FontSize="15"
+                HorizontalTextAlignment="Center"/>
+                <Entry 
+                x:Name="password"
+                IsPassword="True"                
+                Placeholder="Şifre Giriniz"                 
+                WidthRequest="20"
+                FontSize="15"
+                HorizontalTextAlignment="Center"/>
+                <Button
+                x:Name="Kaydet"
+                Text="Kaydet"
+                Clicked="Kaydet_Clicked"
+                BackgroundColor="#FFE126"
+                HeightRequest="40"
+                WidthRequest="130"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                TextColor="DarkGray"/>
+                <Button
+                x:Name="iptal"
+                Text="İptal"
+                Clicked="iptal_Clicked"
+                TextColor="Black"
+                BackgroundColor="Transparent"
+                Opacity="0.8"
+                HeightRequest="30"
+                WidthRequest="100"
+                FontAttributes="Italic"
+                FontSize="8"
+                HorizontalOptions="Center"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Karsilastir.Views.AnaSayfa"
+             Title="AnaSayfa"
+             BackgroundColor="#FF7E26"
+             >
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            x:Name="Secim"
+            Order="Secondary"
+            Text="Seçimlerim"
+            Icon="PersonIcon1.png"
+            Clicked="Secim_Clicked"
+            />
+        <ToolbarItem
+            x:Name="GirisYap"
+            Order="Secondary"
+            Text="Giriş Yap"
+            Icon="PersonIcon1.png"
+            Clicked="GirisYap_Clicked"
+            />
+        <ToolbarItem
+            x:Name="KayitOl"
+            Order="Secondary"
+            Text="Kayıt Ol"
+            Icon="PersonIcon1.png"
+            Clicked="KayitOl_Clicked"
+            />
+        <ToolbarItem
+            x:Name="SifreUnuttum"
+            Order="Secondary"
+            Text="Şifremi Unuttum"
+            Icon="PersonIcon1.png"
+            Clicked="SifreUnuttum_Clicked"
+            />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Enes"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

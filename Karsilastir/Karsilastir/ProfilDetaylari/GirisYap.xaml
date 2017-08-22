@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Karsilastir.ProfilDetaylari.GirisYap"
+             Title="Giriş Yap"
+             BackgroundColor="#FFBA33">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout
+                 Padding="0,20,0,20">
+                <Image
+                Source="logo2.png"
+                HeightRequest="200"
+                WidthRequest="200"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"/>
+            </StackLayout>
+            <StackLayout
+               
+               Padding="65,20,65,20"
+               BackgroundColor="#FFF0D8">
+                <StackLayout>
+                    <Entry
+                   Placeholder="Kullanıcı Adı"
+                   WidthRequest="20"
+                   FontSize="15"
+                   HorizontalTextAlignment="Center"
+                        />
+                    <Entry
+                   Placeholder="Şifre"
+                   IsPassword="True"
+                   WidthRequest="20"
+                   FontSize="15"
+                   HorizontalTextAlignment="Center"/>
+
+                </StackLayout>
+                <Button
+                    x:Name="Karsilastir"
+                    Text="Karşılaştır"
+                    Clicked="Karsilastir_Clicked"
+                    TextColor="White"
+                    BackgroundColor="#FFA733"
+                    HeightRequest="40"
+                    WidthRequest="200"
+                    HorizontalOptions="Center"
+                        />
+                <Button
+                    x:Name="KayitOl"
+                    Text="Kayıt Ol"
+                    Clicked="KayitOl_Clicked"
+                    TextColor="White"
+                    BackgroundColor="#FFA733"
+                    HeightRequest="40"
+                    WidthRequest="200"
+                    HorizontalOptions="Center"/>
+
+                <Button
+                    x:Name="Unuttum"
+                    Text="Şifremi Unuttum"
+                    Clicked="Unuttum_Clicked"
+                    TextColor="DarkGray"
+                    BackgroundColor="Transparent"
+                    Opacity="0.8"
+                    HeightRequest="30"
+                    WidthRequest="100"
+                    FontAttributes="Italic"
+                    FontSize="8"
+                    HorizontalOptions="Center"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

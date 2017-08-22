@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Karsilastir.Kategoriler.Katalog"
+             Title="Katalog Ürünleri"              
+             BackgroundColor="#FF4D41">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout
+                HorizontalOptions="Center" Padding="5">
+                <Image Source="Katalog.png"
+                       HeightRequest="100"
+                       WidthRequest="100"
+                       HorizontalOptions="Center"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="450" />
+                        <RowDefinition Height="450" />
+                        <RowDefinition Height="450" />
+                        <RowDefinition Height="450" />
+                        <RowDefinition Height="450" />
+                        <RowDefinition Height="450" />
+                        <RowDefinition Height="450" />
+                        <RowDefinition Height="450" />
+                        <RowDefinition Height="450" />
+                        <RowDefinition Height="450" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="A101.jpg"  Grid.Row="0" Grid.Column="0" />
+                    <Image Source="BIM.jpg"  Grid.Row="1" Grid.Column="0"/>
+                    <Image Source="Bizim.jpg" Grid.Row="2" Grid.Column="0"/>
+                    <Image Source="carrefour.jpg" Grid.Row="3" Grid.Column="0"/>
+                    <Image Source="Hakmar.jpg" Grid.Row="4" Grid.Column="0"/>
+                    <Image Source="Kipa.jpg" Grid.Row="5" Grid.Column="0"/>
+                    <Image Source="Migros.jpg" Grid.Row="6" Grid.Column="0"/>
+                    <Image Source="Real.jpg" Grid.Row="7" Grid.Column="0"/>
+                    <Image Source="SOK.jpg" Grid.Row="8" Grid.Column="0"/>
+                    <Image Source="UCZ.jpg" Grid.Row="9" Grid.Column="0"/>
+
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
