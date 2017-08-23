@@ -5,8 +5,44 @@
              Title="PetShop"
              BackgroundColor="#FF4D41">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin Forms!" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout
+                Padding="5" HorizontalOptions="Center">
+                <Image Source="PetShop.png"
+                       HeightRequest="150"
+                       WidthRequest="150"
+                       HorizontalOptions="Center"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="BiftekKup.jpg"  Grid.Row="0" Grid.Column="0" />
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="EnjoyGod.jpg"  Grid.Row="0" Grid.Column="1"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="EnjoyKus.jpg" Grid.Row="0" Grid.Column="2"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="Formix.jpg" Grid.Row="1" Grid.Column="0"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="Jetix.jpg" Grid.Row="1" Grid.Column="1"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="KediWC.jpg" Grid.Row="1" Grid.Column="2"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="Kopek.jpg" Grid.Row="2" Grid.Column="0"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="KopekEnjoy.jpg" Grid.Row="2" Grid.Column="1"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="Pedigree.jpg" Grid.Row="2" Grid.Column="2"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="Pedigree2.jpg" Grid.Row="3" Grid.Column="0"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="Proline.jpg" Grid.Row="3" Grid.Column="1"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="Roksy.jpg" Grid.Row="3" Grid.Column="2"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="TavukluKedi.jpg" Grid.Row="4" Grid.Column="0"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="Teo.jpg" Grid.Row="4" Grid.Column="1"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="Whiskas.jpg" Grid.Row="4" Grid.Column="2"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -5,8 +5,45 @@
              Title="Bebek Dünyası"
              BackgroundColor="#FF4D41">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin Forms!" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout
+                Padding="5" HorizontalOptions="Center">
+                <Image Source="Bebek.png"
+                       HeightRequest="150"
+                       WidthRequest="150"
+                       HorizontalOptions="Center"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="Aptamil.jpg"  Grid.Row="0" Grid.Column="0" />
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="BebekPudrasi.jpg"  Grid.Row="0" Grid.Column="1"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="BebekSabunu.jpg" Grid.Row="0" Grid.Column="2"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="DalinBebekYagi.jpg" Grid.Row="1" Grid.Column="0"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="EtiCiciBebe.jpg" Grid.Row="1" Grid.Column="1"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="HeroBaby.jpg" Grid.Row="1" Grid.Column="2"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="IslakMendil.jpg" Grid.Row="2" Grid.Column="0"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="KomiliIslak.jpg" Grid.Row="2" Grid.Column="1"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="Meyve.jpg" Grid.Row="2" Grid.Column="2"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="MolfixJumbo.jpg" Grid.Row="3" Grid.Column="0"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="NiveaSun.jpg" Grid.Row="3" Grid.Column="1"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="PapatyaCayi.jpg" Grid.Row="3" Grid.Column="2"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="PisikKremi.jpg" Grid.Row="4" Grid.Column="0"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="Prima.jpg" Grid.Row="4" Grid.Column="1"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="Sampuan.jpg" Grid.Row="4" Grid.Column="2"/>
+                </Grid>
+            </StackLayout>
+
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

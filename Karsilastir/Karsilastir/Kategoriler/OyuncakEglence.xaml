@@ -5,8 +5,44 @@
              Title="Oyuncak/Eğlence"
              BackgroundColor="#FF4D41">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin Forms!" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout
+                Padding="5" HorizontalOptions="Center">
+                <Image Source="Oyuncak.png"
+                       HeightRequest="150"
+                       WidthRequest="150"
+                       HorizontalOptions="Center"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="Araba.jpg"  Grid.Row="0" Grid.Column="0" />
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="Barbie.jpg"  Grid.Row="0" Grid.Column="1"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="BezBebek.jpg" Grid.Row="0" Grid.Column="2"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="Bisiklet.jpg" Grid.Row="1" Grid.Column="0"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="Bowling.jpg" Grid.Row="1" Grid.Column="1"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="Dinazor.jpg" Grid.Row="1" Grid.Column="2"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="Ev.jpg" Grid.Row="2" Grid.Column="0"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="Gokkusagi.jpg" Grid.Row="2" Grid.Column="1"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="Jeep.jpg" Grid.Row="2" Grid.Column="2"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="Kamyon.jpg" Grid.Row="3" Grid.Column="0"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="Maske.jpg" Grid.Row="3" Grid.Column="1"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="ModelAraba.jpg" Grid.Row="3" Grid.Column="2"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="Tabanca.jpg" Grid.Row="4" Grid.Column="0"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="TransFormes.jpg" Grid.Row="4" Grid.Column="1"/>
+                    <Button Clicked="Button_Clicked" BackgroundColor="Transparent" Image="Woman.jpg" Grid.Row="4" Grid.Column="2"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

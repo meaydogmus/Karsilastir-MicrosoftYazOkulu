@@ -9,8 +9,8 @@
             <StackLayout
                 HorizontalOptions="Center" Padding="5">
                 <Image Source="Katalog.png"
-                       HeightRequest="100"
-                       WidthRequest="100"
+                       HeightRequest="150"
+                       WidthRequest="150"
                        HorizontalOptions="Center"/>
                 <Grid>
                     <Grid.RowDefinitions>

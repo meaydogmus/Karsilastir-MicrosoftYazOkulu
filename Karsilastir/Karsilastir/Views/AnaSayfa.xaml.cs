@@ -16,7 +16,9 @@ namespace Karsilastir.Views
         public AnaSayfa()
         {
             InitializeComponent();
+            
         }
+        List<Secim> Secimler = new List<Secim>();
 
         private void Secim_Clicked(object sender, EventArgs e)
         {
@@ -36,6 +38,44 @@ namespace Karsilastir.Views
         private void SifreUnuttum_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new SifremiUnuttum());
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            var btn = (Button)sender;
+            if (btn.BackgroundColor == Color.Transparent)
+            {
+                btn.BackgroundColor = Color.Black;
+                Secimler.Add(new Secim
+                {
+                    Fiyat = int.Parse(btn.CommandParameter.ToString()),
+                    ImageName = btn.Image.File
+                });
+            }
+            else if (btn.BackgroundColor == Color.Black)
+            {
+                btn.BackgroundColor = Color.Transparent;
+                Secimler.Remove(new Secim
+                {
+                    Fiyat = int.Parse(btn.CommandParameter.ToString()),
+                    ImageName = btn.Image.File
+                });
+            }
+        }
+
+        private void Listele_Clicked(object sender, SelectedItemChangedEventArgs e)
+        {
+
+            if (e.SelectedItem == null)
+                return;
+            else
+            {
+                Secimlerim nextPage = new Secimlerim();
+                nextPage.BindingContext = Secimler;
+                Navigation.PushAsync(nextPage);
+
+            }
+
         }
     }
 }

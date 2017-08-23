@@ -80,6 +80,7 @@
     <Compile Include="ProfilDetaylari\SifremiUnuttum.xaml.cs">
       <DependentUpon>SifremiUnuttum.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Secim.cs" />
     <Compile Include="Views\AnaSayfa.xaml.cs">
       <DependentUpon>AnaSayfa.xaml</DependentUpon>
     </Compile>
@@ -92,6 +93,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\HamburgerMenu.xaml.cs">
       <DependentUpon>HamburgerMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Listeleme.xaml.cs">
+      <DependentUpon>Listeleme.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\MyMaster.cs" />
   </ItemGroup>
@@ -217,6 +221,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ProfilDetaylari\Secimlerim.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Listeleme.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

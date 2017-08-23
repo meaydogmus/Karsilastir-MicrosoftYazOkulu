@@ -5,8 +5,48 @@
              Title="Et/Şarküteri"
              BackgroundColor="#FF4D41">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin Forms!" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout
+                Padding="5" HorizontalOptions="Center">
+                <Image Source="Et.png"
+                       HeightRequest="150"
+                       WidthRequest="150"
+                       HorizontalOptions="Center"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button Clicked="Button_Clicked"  CommandParameter="50" BackgroundColor="Transparent" Image="AciliKangal.jpg"  Grid.Row="0" Grid.Column="0" />
+                    <Button Clicked="Button_Clicked"  CommandParameter="20" BackgroundColor="Transparent" Image="BeypilicBonfile.jpg"  Grid.Row="0" Grid.Column="1"/>
+                    <Button Clicked="Button_Clicked"  CommandParameter="12" BackgroundColor="Transparent" Image="CPBaget.jpg" Grid.Row="0" Grid.Column="2"/>
+                    <Button Clicked="Button_Clicked"  CommandParameter="35" BackgroundColor="Transparent" Image="DanaKiyma.jpg" Grid.Row="1" Grid.Column="0"/>
+                    <Button Clicked="Button_Clicked"  CommandParameter="38" BackgroundColor="Transparent" Image="DanaKusbasi.jpg" Grid.Row="1" Grid.Column="1"/>
+                    <Button Clicked="Button_Clicked"  CommandParameter="70" BackgroundColor="Transparent" Image="Kavurma.jpg" Grid.Row="1" Grid.Column="2"/>
+                    <Button Clicked="Button_Clicked"  CommandParameter="55" BackgroundColor="Transparent" Image="KuzuBiftek.jpg" Grid.Row="2" Grid.Column="0"/>
+                    <Button Clicked="Button_Clicked"  CommandParameter="55" BackgroundColor="Transparent" Image="KuzuIncik.jpg" Grid.Row="2" Grid.Column="1"/>
+                    <Button Clicked="Button_Clicked"  CommandParameter="22" BackgroundColor="Transparent" Image="LezitaBaget.jpg" Grid.Row="2" Grid.Column="2"/>
+                    <Button Clicked="Button_Clicked"  CommandParameter="18" BackgroundColor="Transparent" Image="LezitaBut.jpg" Grid.Row="3" Grid.Column="0"/>
+                    <Button Clicked="Button_Clicked"  CommandParameter="56" BackgroundColor="Transparent" Image="MaretSucuk.jpg" Grid.Row="3" Grid.Column="1"/>
+                    <Button Clicked="Button_Clicked"  CommandParameter="12" BackgroundColor="Transparent" Image="PilicSalam.jpg" Grid.Row="3" Grid.Column="2"/>
+                    <Button Clicked="Button_Clicked"  CommandParameter="22" BackgroundColor="Transparent" Image="Salam.jpg" Grid.Row="4" Grid.Column="0"/>
+                    <Button Clicked="Button_Clicked"  CommandParameter="50" BackgroundColor="Transparent" Image="SushiEbi.jpg" Grid.Row="4" Grid.Column="1"/>
+                    <Button Clicked="Button_Clicked"  CommandParameter="12" BackgroundColor="Transparent" Image="TavukPirzola.jpg" Grid.Row="4" Grid.Column="2"/>
+                    <Button x:Name="Listele" Text="Listele" Clicked="Listele_Clicked" Grid.Row="5" Grid.ColumnSpan="3" HorizontalOptions="Center" />
+                </Grid>
+            </StackLayout>
+            
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

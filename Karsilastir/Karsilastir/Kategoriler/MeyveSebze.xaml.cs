@@ -16,5 +16,19 @@ namespace Karsilastir.Kategoriler
         {
             InitializeComponent();
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            var btn = (Button)sender;
+            if (btn.BackgroundColor == Color.Transparent)
+            {
+                btn.BackgroundColor = Color.Black;
+            }
+            else if (btn.BackgroundColor == Color.Black)
+            {
+                btn.BackgroundColor = Color.Transparent;
+
+            }
+        }
     }
 }

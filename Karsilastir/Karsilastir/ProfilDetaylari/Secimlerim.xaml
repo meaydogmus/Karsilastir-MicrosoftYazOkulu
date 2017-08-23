@@ -4,8 +4,22 @@
              x:Class="Karsilastir.ProfilDetaylari.Secimlerim"
              Title="Seçimlerim">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout>
-            <Label Text="Welcome to Xamarin Forms!" />
+            <ListView x:Name="secimler" ItemsSource="{Binding .}" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical" >
+                                <Label Text="{Binding Fiyat}"></Label>
+                                <Image Source="{Binding ImageName}"></Image>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

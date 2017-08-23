@@ -37,8 +37,67 @@
             />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Enes"/>
-        </StackLayout>
+        <ScrollView>
+            <StackLayout
+                Padding="5" HorizontalOptions="Center">
+                <Image Source="logo2.png"
+                       HeightRequest="150"
+                       WidthRequest="150"
+                       HorizontalOptions="Center"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />                        
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button Clicked="Button_Clicked" CommandParameter="22" BackgroundColor="Transparent" Image="Aptamil.jpg"  Grid.Row="0" Grid.Column="0" HeightRequest="100" WidthRequest="100" />
+                    <Button Clicked="Button_Clicked" CommandParameter="22" BackgroundColor="Transparent" Image="BebekPudrasi.jpg"  Grid.Row="0" Grid.Column="1" HeightRequest="100" WidthRequest="100"/>
+                    <Button Clicked="Button_Clicked" CommandParameter="22" BackgroundColor="Transparent" Image="BebekSabunu.jpg" Grid.Row="0" Grid.Column="2" HeightRequest="100" WidthRequest="100" />
+                    <Button Clicked="Button_Clicked" CommandParameter="22" BackgroundColor="Transparent" Image="Muz.jpg" Grid.Row="1" Grid.Column="0" HeightRequest="100" WidthRequest="100" />
+                    <Button Clicked="Button_Clicked" CommandParameter="22" BackgroundColor="Transparent" Image="CarlistonBiber.jpg" Grid.Row="1" Grid.Column="1" HeightRequest="100" WidthRequest="100" />
+                    <Button Clicked="Button_Clicked" CommandParameter="22" BackgroundColor="Transparent" Image="Domates.jpg" Grid.Row="1" Grid.Column="2" HeightRequest="100" WidthRequest="100" />
+                    <Button Clicked="Button_Clicked" CommandParameter="22" BackgroundColor="Transparent" Image="LimonKolonyasi.jpg" Grid.Row="2" Grid.Column="0" HeightRequest="100" WidthRequest="100" />
+                    <Button Clicked="Button_Clicked" CommandParameter="22" BackgroundColor="Transparent" Image="Molped.jpg" Grid.Row="2" Grid.Column="1" HeightRequest="100" WidthRequest="100" />
+                    <Button Clicked="Button_Clicked" CommandParameter="22" BackgroundColor="Transparent" Image="NiveaKrem.jpg" Grid.Row="2" Grid.Column="2" HeightRequest="100" WidthRequest="100" />
+                    <Button Clicked="Button_Clicked" CommandParameter="22" BackgroundColor="Transparent" Image="MaketBicagi.jpg" Grid.Row="3" Grid.Column="0" HeightRequest="100" WidthRequest="100" />
+                    <Button Clicked="Button_Clicked" CommandParameter="22" BackgroundColor="Transparent" Image="Pritt.jpg" Grid.Row="3" Grid.Column="1" HeightRequest="100" WidthRequest="100" />
+                    <Button Clicked="Button_Clicked" CommandParameter="22" BackgroundColor="Transparent" Image="SuluBoya.jpg" Grid.Row="3" Grid.Column="2" HeightRequest="100" WidthRequest="100" />
+                    <Button Clicked="Button_Clicked" CommandParameter="22" BackgroundColor="Transparent" Image="Salam.jpg" Grid.Row="4" Grid.Column="0" HeightRequest="100" WidthRequest="100" />
+                    <Button Clicked="Button_Clicked" CommandParameter="22" BackgroundColor="Transparent" Image="SushiEbi.jpg" Grid.Row="4" Grid.Column="1" HeightRequest="100" WidthRequest="100" />
+                    <Button Clicked="Button_Clicked" CommandParameter="22" BackgroundColor="Transparent" Image="TavukPirzola.jpg" Grid.Row="4" Grid.Column="2" HeightRequest="100" WidthRequest="100" />
+                    <Button Clicked="Button_Clicked" CommandParameter="22" BackgroundColor="Transparent" Image="BurguMakarna.jpg"  Grid.Row="5" Grid.Column="0"  HeightRequest="100" WidthRequest="100" />
+                    <Button Clicked="Button_Clicked" CommandParameter="22" BackgroundColor="Transparent" Image="DomatesSalcasi.jpg"  Grid.Row="5" Grid.Column="1" HeightRequest="100" WidthRequest="100" />
+                    <Button Clicked="Button_Clicked" CommandParameter="22" BackgroundColor="Transparent" Image="ErikliSu.jpg" Grid.Row="5" Grid.Column="2" HeightRequest="100" WidthRequest="100" />
+                    <Button Clicked="Button_Clicked" CommandParameter="22" BackgroundColor="Transparent" Image="DalinBebekYagi.jpg" Grid.Row="6" Grid.Column="0" HeightRequest="100" WidthRequest="100" />
+                    <Button Clicked="Button_Clicked" CommandParameter="22" BackgroundColor="Transparent" Image="EtiCiciBebe.jpg" Grid.Row="6" Grid.Column="1" HeightRequest="100" WidthRequest="100" />
+                    <Button Clicked="Button_Clicked" CommandParameter="22" BackgroundColor="Transparent" Image="HeroBaby.jpg" Grid.Row="6" Grid.Column="2" HeightRequest="100" WidthRequest="100" />
+                    <Button Clicked="Button_Clicked" CommandParameter="22" BackgroundColor="Transparent" Image="Ace.jpg"  Grid.Row="7" Grid.Column="0" HeightRequest="100" WidthRequest="100"  />
+                    <Button Clicked="Button_Clicked" CommandParameter="22" BackgroundColor="Transparent" Image="Ariel.jpg"  Grid.Row="7" Grid.Column="1" HeightRequest="100" WidthRequest="100" />
+                    <Button Clicked="Button_Clicked" CommandParameter="22" BackgroundColor="Transparent" Image="BrefWC.jpg" Grid.Row="7" Grid.Column="2" HeightRequest="100" WidthRequest="100" />
+                    <Button Clicked="Button_Clicked" CommandParameter="22" BackgroundColor="Transparent" Image="BiftekKup.jpg"  Grid.Row="8" Grid.Column="0" HeightRequest="100" WidthRequest="100"  />
+                    <Button Clicked="Button_Clicked" CommandParameter="22" BackgroundColor="Transparent" Image="EnjoyGod.jpg"  Grid.Row="8" Grid.Column="1" HeightRequest="100" WidthRequest="100" />
+                    <Button Clicked="Button_Clicked" CommandParameter="22" BackgroundColor="Transparent" Image="EnjoyKus.jpg" Grid.Row="8" Grid.Column="2" HeightRequest="100" WidthRequest="100" />
+                    <Button Clicked="Button_Clicked" CommandParameter="22" BackgroundColor="Transparent" Image="Araba.jpg"  Grid.Row="9" Grid.Column="0"  HeightRequest="100" WidthRequest="100" />
+                    <Button Clicked="Button_Clicked" CommandParameter="22" BackgroundColor="Transparent" Image="Barbie.jpg"  Grid.Row="9" Grid.Column="1" HeightRequest="100" WidthRequest="100" />
+                    <Button Clicked="Button_Clicked" CommandParameter="22" BackgroundColor="Transparent" Image="BezBebek.jpg" Grid.Row="9" Grid.Column="2" HeightRequest="100" WidthRequest="100" />
+                    <Button x:Name="Listele" Text="Listele" Clicked="Listele_Clicked" Grid.Row="10" Grid.ColumnSpan="3" HorizontalOptions="Center" />
+                </Grid>
+            </StackLayout>
+
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
