@@ -2,24 +2,37 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Karsilastir.ProfilDetaylari.Secimlerim"
-             Title="Seçimlerim">
+             Title="Seçimlerim"
+             BackgroundColor="#FF4D41">
     <ContentPage.Content>
         <ScrollView>
-        <StackLayout>
-            <ListView x:Name="secimler" ItemsSource="{Binding .}" >
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout Orientation="Vertical" >
-                                <Label Text="{Binding Fiyat}"></Label>
-                                <Image Source="{Binding ImageName}"></Image>
-                            </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            
-        </StackLayout>
+            <StackLayout Orientation="Vertical" >
+                <ListView x:Name="secimler" ItemsSource="{Binding .}" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Vertical">
+                                    <Image Source="{Binding ImageName}" HeightRequest="100" WidthRequest="100" ></Image>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView >
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+                    <Image Source="migross.png" HeightRequest="75" WidthRequest="150"></Image>
+                    <Label Text="Fiyat: " FontSize="Large"  HorizontalOptions="End" />
+                    <Label x:Name="lblToplam" FontSize="Large"/>
+                    <Label Text="TL" FontSize="Large"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Image Source="carrefoursa.png" HeightRequest="75" WidthRequest="150"></Image>
+                    <Label Text="Fiyat: " FontSize="Large" />
+                    <Label x:Name="lblToplam2" FontSize="Large"/>
+                    <Label Text="TL" FontSize="Large"/>
+
+                </StackLayout>
+            </StackLayout>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -16,5 +16,18 @@ namespace Karsilastir.ProfilDetaylari
         {
             InitializeComponent();
         }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            List<Secim> data = BindingContext as List<Secim>;
+
+            double sayi = data.Sum(x => x.Fiyat) * (new Random().NextDouble() * (2 - 1) + 1.0);
+            lblToplam.Text = sayi.ToString("F");
+
+            double sayi2 = data.Sum(x => x.Fiyat) * (new Random().NextDouble() * (2 - 1) + 1.0);
+            lblToplam2.Text = sayi2.ToString("F");
+        }
     }
 }

@@ -20,10 +20,6 @@ namespace Karsilastir.Views
         }
         List<Secim> Secimler = new List<Secim>();
 
-        private void Secim_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new Secimlerim());
-        }
 
         private void GirisYap_Clicked(object sender, EventArgs e)
         {
@@ -63,7 +59,7 @@ namespace Karsilastir.Views
             }
         }
 
-        private void Listele_Clicked(object sender, SelectedItemChangedEventArgs e)
+        private async void Listele_Clicked(object sender, SelectedItemChangedEventArgs e)
         {
 
             if (e.SelectedItem == null)
@@ -72,7 +68,7 @@ namespace Karsilastir.Views
             {
                 Secimlerim nextPage = new Secimlerim();
                 nextPage.BindingContext = Secimler;
-                Navigation.PushAsync(nextPage);
+                await Navigation.PushAsync(nextPage);
 
             }
 

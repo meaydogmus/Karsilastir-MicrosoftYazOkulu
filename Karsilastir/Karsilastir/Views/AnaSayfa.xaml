@@ -7,13 +7,7 @@
              >
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem
-            x:Name="Secim"
-            Order="Secondary"
-            Text="Seçimlerim"
-            Icon="PersonIcon1.png"
-            Clicked="Secim_Clicked"
-            />
+
         <ToolbarItem
             x:Name="GirisYap"
             Order="Secondary"
